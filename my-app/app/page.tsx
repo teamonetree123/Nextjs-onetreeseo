@@ -13,7 +13,7 @@ import {
   CardContent,
 } from "./ui/card";
 
-/* --- Inline SVG icons (no external deps) --- */
+/* --- Inline SVG icons (used) --- */
 const MapPin = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}
        strokeLinecap="round" strokeLinejoin="round" {...props}>
@@ -21,12 +21,14 @@ const MapPin = (props: React.SVGProps<SVGSVGElement>) => (
     <circle cx="12" cy="10" r="3" />
   </svg>
 );
+
 const Phone = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}
        strokeLinecap="round" strokeLinejoin="round" {...props}>
     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.15 8.81 19.79 19.79 0 0 1 .08.18 2 2 0 0 1 2.06-2h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .65 2.81 2 2 0 0 1-.45 2.11L6.1 7.91a16 16 0 0 0 6 6l3.27-1.16a2 2 0 0 1 2.11.45c.84.84 1.79 1.59 2.81.65A12.05 12.05 0 0 0 20.28 14a2 2 0 0 1 1.72 2.92z" />
   </svg>
 );
+
 const Mail = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}
        strokeLinecap="round" strokeLinejoin="round" {...props}>
@@ -79,7 +81,6 @@ const Zap = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-/* Service + benefit icons */
 const Search = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}
        strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
@@ -157,6 +158,7 @@ const MousePointer = (props: SVGProps<SVGSVGElement>) => (
     <path d="M13 13l6 6" />
   </svg>
 );
+
 const CheckCircle = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}
        strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
@@ -179,77 +181,14 @@ const Shield = (props: SVGProps<SVGSVGElement>) => (
     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
   </svg>
 );
-/* --- Extra Icons --- */
 
-// For testimonials (quote mark)
-const Quote = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
-    <path d="M7.17 6A5.17 5.17 0 0 0 2 11.17V18a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-6a6 6 0 0 0-6-6zm10 0A5.17 5.17 0 0 0 12 11.17V18a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-6a6 6 0 0 0-6-6z"/>
-  </svg>
-);
-
-// For project industry badges
-const Bag = (props: React.SVGProps<SVGSVGElement>) => ( // Retail / E-commerce
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-       strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
-    <path d="M6 2l1 5h10l1-5z" />
-    <path d="M3 7h18v14H3z" />
-  </svg>
-);
-
-const Home = (props: React.SVGProps<SVGSVGElement>) => ( // Home Services
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-       strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
-    <path d="M3 9.5L12 3l9 6.5V21a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9.5z" />
-    <path d="M9 22V12h6v10" />
-  </svg>
-);
-
-const Laptop = (props: React.SVGProps<SVGSVGElement>) => ( // SaaS / Tech
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-       strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
-    <rect x="3" y="4" width="18" height="12" rx="2" ry="2" />
-    <path d="M2 20h20" />
-  </svg>
-);
-const Badge = ({ icon, label }: { icon: React.ReactNode; label: string }) => (
-  <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium bg-gradient-to-r from-gray-100 to-gray-50 border border-gray-200 shadow-sm">
-    {icon}
-    {label}
-  </span>
-);
-
-/* --- end icons --- */
+/* --- Data (all used) --- */
 const locations = [
-  {
-    city: "New York",
-    address: "123 Broadway, Suite 500",
-    zipcode: "New York, NY 10001",
-    phone: "(555) 123-4567",
-    email: "ny@onetreeseo.com",
-    hours: "Mon-Fri: 9AM-6PM EST",
-    icon: <MapPin className="h-5 w-5 text-blue-500" />
-  },
-  {
-    city: "Los Angeles",
-    address: "456 Sunset Blvd, Floor 10",
-    zipcode: "Los Angeles, CA 90028",
-    phone: "(555) 234-5678",
-    email: "la@onetreeseo.com",
-    hours: "Mon-Fri: 9AM-6PM PST",
-    icon: <MapPin className="h-5 w-5 text-yellow-500" />
-  },
-  {
-    city: "Chicago",
-    address: "789 Michigan Ave, Suite 300",
-    zipcode: "Chicago, IL 60611",
-    phone: "(555) 345-6789",
-    email: "chicago@onetreeseo.com",
-    hours: "Mon-Fri: 9AM-6PM CST",
-    icon: <MapPin className="h-5 w-5 text-green-500" />
-  }
+  { city: "New York", address: "123 Broadway, Suite 500", zipcode: "New York, NY 10001", phone: "(555) 123-4567", email: "ny@onetreeseo.com", hours: "Mon-Fri: 9AM-6PM EST", icon: <MapPin className="h-5 w-5 text-blue-500" /> },
+  { city: "Los Angeles", address: "456 Sunset Blvd, Floor 10", zipcode: "Los Angeles, CA 90028", phone: "(555) 234-5678", email: "la@onetreeseo.com", hours: "Mon-Fri: 9AM-6PM PST", icon: <MapPin className="h-5 w-5 text-yellow-500" /> },
+  { city: "Chicago", address: "789 Michigan Ave, Suite 300", zipcode: "Chicago, IL 60611", phone: "(555) 345-6789", email: "chicago@onetreeseo.com", hours: "Mon-Fri: 9AM-6PM CST", icon: <MapPin className="h-5 w-5 text-green-500" /> },
 ];
-/* Values for "About" */
+
 const values = [
   { title: "Transparency", description: "Clear reporting and strategy you can actually understand.", icon: <Sparkles className="h-5 w-5 text-yellow-500" /> },
   { title: "Performance",  description: "Targets, timelines, and outcomes—measured, not guessed.",   icon: <Target   className="h-5 w-5 text-green-500"  /> },
@@ -257,59 +196,15 @@ const values = [
   { title: "Speed",        description: "Fast comms and faster execution. No black-box fluff.",      icon: <Zap      className="h-5 w-5 text-indigo-500" /> },
 ];
 
-/* Services data */
 const services = [
-  {
-    icon: <Search className="h-8 w-8 text-primary" />,
-    title: "Technical SEO",
-    description: "Complete website optimization including site speed, mobile responsiveness, and search engine crawlability.",
-    features: ["Site Speed Optimization", "Mobile Optimization", "Schema Markup", "XML Sitemaps"],
-    gradient: "from-blue-500 to-cyan-500",
-    bgGradient: "from-blue-50 to-cyan-50",
-  },
-  {
-    icon: <PenTool className="h-8 w-8 text-primary" />,
-    title: "Content Marketing",
-    description: "Strategic content creation that engages your audience and drives organic traffic to your website.",
-    features: ["Keyword Research", "Blog Writing", "Content Strategy", "SEO Copywriting"],
-    gradient: "from-purple-500 to-pink-500",
-    bgGradient: "from-purple-50 to-pink-50",
-  },
-  {
-    icon: <BarChart3 className="h-8 w-8 text-primary" />,
-    title: "Local SEO",
-    description: "Dominate local search results and attract customers in your area with targeted local optimization.",
-    features: ["Google My Business", "Local Citations", "Review Management", "Local Link Building"],
-    gradient: "from-green-500 to-emerald-500",
-    bgGradient: "from-green-50 to-emerald-50",
-  },
-  {
-    icon: <Globe className="h-8 w-8 text-primary" />,
-    title: "Link Building",
-    description: "High-quality backlink acquisition to boost your domain authority and search engine rankings.",
-    features: ["Guest Posting", "Digital PR", "Broken Link Building", "Competitor Analysis"],
-    gradient: "from-orange-500 to-red-500",
-    bgGradient: "from-orange-50 to-red-50",
-  },
-  {
-    icon: <Smartphone className="h-8 w-8 text-primary" />,
-    title: "PPC Management",
-    description: "Maximize your ad spend with data-driven pay-per-click campaigns across Google and social platforms.",
-    features: ["Google Ads", "Facebook Ads", "Keyword Bidding", "Landing Page Optimization"],
-    gradient: "from-indigo-500 to-blue-500",
-    bgGradient: "from-indigo-50 to-blue-50",
-  },
-  {
-    icon: <TrendingUp className="h-8 w-8 text-primary" />,
-    title: "Analytics & Reporting",
-    description: "Comprehensive tracking and reporting to measure success and optimize performance continuously.",
-    features: ["Custom Dashboards", "Monthly Reports", "Goal Tracking", "ROI Analysis"],
-    gradient: "from-teal-500 to-cyan-500",
-    bgGradient: "from-teal-50 to-cyan-50",
-  },
+  { icon: <Search className="h-8 w-8 text-primary" />, title: "Technical SEO", description: "Complete website optimization including site speed, mobile responsiveness, and search engine crawlability.", features: ["Site Speed Optimization", "Mobile Optimization", "Schema Markup", "XML Sitemaps"], gradient: "from-blue-500 to-cyan-500", bgGradient: "from-blue-50 to-cyan-50" },
+  { icon: <PenTool className="h-8 w-8 text-primary" />, title: "Content Marketing", description: "Strategic content creation that engages your audience and drives organic traffic to your website.", features: ["Keyword Research", "Blog Writing", "Content Strategy", "SEO Copywriting"], gradient: "from-purple-500 to-pink-500", bgGradient: "from-purple-50 to-pink-50" },
+  { icon: <BarChart3 className="h-8 w-8 text-primary" />, title: "Local SEO", description: "Dominate local search results and attract customers in your area with targeted local optimization.", features: ["Google My Business", "Local Citations", "Review Management", "Local Link Building"], gradient: "from-green-500 to-emerald-500", bgGradient: "from-green-50 to-emerald-50" },
+  { icon: <Globe className="h-8 w-8 text-primary" />, title: "Link Building", description: "High-quality backlink acquisition to boost your domain authority and search engine rankings.", features: ["Guest Posting", "Digital PR", "Broken Link Building", "Competitor Analysis"], gradient: "from-orange-500 to-red-500", bgGradient: "from-orange-50 to-red-50" },
+  { icon: <Smartphone className="h-8 w-8 text-primary" />, title: "PPC Management", description: "Maximize your ad spend with data-driven pay-per-click campaigns across Google and social platforms.", features: ["Google Ads", "Facebook Ads", "Keyword Bidding", "Landing Page Optimization"], gradient: "from-indigo-500 to-blue-500", bgGradient: "from-indigo-50 to-blue-50" },
+  { icon: <TrendingUp className="h-8 w-8 text-primary" />, title: "Analytics & Reporting", description: "Comprehensive tracking and reporting to measure success and optimize performance continuously.", features: ["Custom Dashboards", "Monthly Reports", "Goal Tracking", "ROI Analysis"], gradient: "from-teal-500 to-cyan-500", bgGradient: "from-teal-50 to-cyan-50" },
 ];
 
-/* Benefits data (optional, if you use it elsewhere) */
 type Benefit = {
   icon: React.ReactNode;
   title: string;
@@ -329,187 +224,45 @@ const benefits: Benefit[] = [
 ];
 
 const reasons = [
-  {
-    icon: <CheckCircle className="h-6 w-6 text-green-500" />,
-    title: "Proven Results",
-    description: "Our strategies have helped clients achieve average traffic increases of 300% within 6 months."
-  },
-  {
-    icon: <Clock className="h-6 w-6 text-blue-500" />,
-    title: "Fast Implementation",
-    description: "We start delivering results within the first 30 days of engagement with quick wins and optimizations."
-  },
-  {
-    icon: <Shield className="h-6 w-6 text-purple-500" />,
-    title: "White-Hat Only",
-    description: "We follow Google's guidelines strictly, ensuring your website's long-term safety and sustainability."
-  },
-  {
-    icon: <Users className="h-6 w-6 text-orange-500" />,
-    title: "Dedicated Support",
-    description: "Your dedicated account manager provides regular updates and is always available for consultation."
-  }
+  { icon: <CheckCircle className="h-6 w-6 text-green-500" />, title: "Proven Results",        description: "Our strategies have helped clients achieve average traffic increases of 300% within 6 months." },
+  { icon: <Clock className="h-6 w-6 text-blue-500" />,        title: "Fast Implementation",   description: "We start delivering results within the first 30 days of engagement with quick wins and optimizations." },
+  { icon: <Shield className="h-6 w-6 text-purple-500" />,     title: "White-Hat Only",        description: "We follow Google's guidelines strictly, ensuring your website's long-term safety and sustainability." },
+  { icon: <Users className="h-6 w-6 text-orange-500" />,      title: "Dedicated Support",     description: "Your dedicated account manager provides regular updates and is always available for consultation." },
 ];
 
 const industryStats = [
-  {
-    stat: "93% of online experiences begin with a search engine",
-    icon: <Globe className="h-6 w-6" />,
-    insight: "Search is the primary gateway to the internet",
-    gradient: "from-blue-400 to-cyan-500",
-    bgGradient: "from-blue-50 to-cyan-50",
-  },
-  {
-    stat: "75% of users never scroll past the first page of search results",
-    icon: <Eye className="h-6 w-6" />,
-    insight: "First page rankings are crucial for visibility",
-    gradient: "from-purple-400 to-pink-500",
-    bgGradient: "from-purple-50 to-pink-50",
-  },
-  {
-    stat: "SEO leads have a 14.6% close rate vs 1.7% for outbound leads",
-    icon: <Target className="h-6 w-6" />,
-    insight: "Organic traffic converts significantly better",
-    gradient: "from-green-400 to-emerald-500",
-    bgGradient: "from-green-50 to-emerald-50",
-  },
-  {
-    stat: "61% of marketers say improving SEO is their top priority",
-    icon: <TrendingUp className="h-6 w-6" />,
-    insight: "SEO is recognized as a critical growth driver",
-    gradient: "from-orange-400 to-red-500",
-    bgGradient: "from-orange-50 to-red-50",
-  },
-  {
-    stat: "68% of online experiences start with organic search",
-    icon: <BarChart3 className="h-6 w-6" />,
-    insight: "Organic search dominates web traffic sources",
-    gradient: "from-indigo-400 to-blue-500",
-    bgGradient: "from-indigo-50 to-blue-50",
-  },
-  {
-    stat: "53% of website traffic comes from organic search",
-    icon: <Users className="h-6 w-6" />,
-    insight: "More than half of all website visitors find you through search",
-    gradient: "from-teal-400 to-cyan-500",
-    bgGradient: "from-teal-50 to-cyan-50",
-  },
+  { stat: "93% of online experiences begin with a search engine", icon: <Globe className="h-6 w-6" />, insight: "Search is the primary gateway to the internet", gradient: "from-blue-400 to-cyan-500", bgGradient: "from-blue-50 to-cyan-50" },
+  { stat: "75% of users never scroll past the first page of search results", icon: <Eye className="h-6 w-6" />, insight: "First page rankings are crucial for visibility", gradient: "from-purple-400 to-pink-500", bgGradient: "from-purple-50 to-pink-50" },
+  { stat: "SEO leads have a 14.6% close rate vs 1.7% for outbound leads", icon: <Target className="h-6 w-6" />, insight: "Organic traffic converts significantly better", gradient: "from-green-400 to-emerald-500", bgGradient: "from-green-50 to-emerald-50" },
+  { stat: "61% of marketers say improving SEO is their top priority", icon: <TrendingUp className="h-6 w-6" />, insight: "SEO is recognized as a critical growth driver", gradient: "from-orange-400 to-red-500", bgGradient: "from-orange-50 to-red-50" },
+  { stat: "68% of online experiences start with organic search", icon: <BarChart3 className="h-6 w-6" />, insight: "Organic search dominates web traffic sources", gradient: "from-indigo-400 to-blue-500", bgGradient: "from-indigo-50 to-blue-50" },
+  { stat: "53% of website traffic comes from organic search", icon: <Users className="h-6 w-6" />, insight: "More than half of all website visitors find you through search", gradient: "from-teal-400 to-cyan-500", bgGradient: "from-teal-50 to-cyan-50" },
 ];
 
 const projects = [
-    {
-      title: "E-commerce Fashion Store",
-      industry: "Retail",
-      image: "https://images.unsplash.com/photo-1615454782617-e69bbd4f2969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3ZWIlMjBkZXZlbG9wbWVudCUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NTU1MTc5MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      results: {
-        traffic: "+340%",
-        ranking: "85% Top 3",
-        revenue: "+280%"
-      },
-      description: "Transformed an online fashion retailer's SEO strategy, resulting in massive organic growth and revenue increase.",
-      timeframe: "6 months"
-    },
-    {
-      title: "Local Service Business",
-      industry: "Home Services",
-      image: "https://images.unsplash.com/photo-1579389248774-07907f421a6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwxfHx8fDE3NTU0ODYxNDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      results: {
-        traffic: "+450%",
-        ranking: "Page 1",
-        leads: "+320%"
-      },
-      description: "Helped a local HVAC company dominate their geographic market through strategic local SEO optimization.",
-      timeframe: "4 months"
-    },
-    {
-      title: "SaaS Technology Platform",
-      industry: "Technology",
-      image: "https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxTRU8lMjBhbmFseXRpY3MlMjBkYXNoYm9hcmQlMjBjb21wdXRlcnxlbnwxfHx8fDE3NTU1MTc5MDF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      results: {
-        traffic: "+290%",
-        ranking: "92% Top 10",
-        signups: "+180%"
-      },
-      description: "Elevated a B2B SaaS platform's organic visibility and increased qualified demo requests significantly.",
-      timeframe: "8 months"
-    }
-  ];
-
-  const testimonials = [
-    {
-      quote: "OneTree SEO transformed our online presence. We went from page 3 to dominating page 1 for our main keywords.",
-      author: "Sarah Johnson",
-      company: "TechStart Solutions",
-      role: "Marketing Director"
-    },
-    {
-      quote: "The results speak for themselves - 340% increase in organic traffic and our best year ever in terms of revenue.",
-      author: "Michael Chen",
-      company: "Urban Fashion Co.",
-      role: "CEO"
-    },
-    {
-      quote: "Professional, knowledgeable, and results-driven. OneTree SEO exceeded all our expectations.",
-      author: "David Rodriguez",
-      company: "HomeComfort HVAC",
-      role: "Owner"
-    }
-  ];
-  const serviceAreas = [
-    "New York Metro", "Los Angeles County", "Chicago Metro", "San Francisco Bay Area",
-    "Boston", "Philadelphia", "Washington DC", "Atlanta", "Miami", "Dallas",
-    "Houston", "Phoenix", "Seattle", "Denver", "Austin", "San Diego"
-  ];
-  // handlers (TS-friendly)
-
-
-
-// inline icons (no external deps)
-
-const MessageCircle = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}
-       strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
-    <path d="M21 11.5a8.38 8.38 0 0 1-9 8.5 8.5 8.5 0 1 1 9-8.5Z" />
-    <path d="M3.5 20.5 5 16" />
-  </svg>
-);
-
-// contact info (uses inline icons above)
-const contactInfo = [
-  {
-    icon: <Phone className="h-6 w-6" />,
-    title: "Phone",
-    content: "(555) 123-4567",
-    subtext: "Mon-Fri, 9AM-6PM EST",
-    gradient: "from-blue-400 to-cyan-500",
-    bgGradient: "from-blue-50 to-cyan-50",
-  },
-  {
-    icon: <Mail className="h-6 w-6" />,
-    title: "Email",
-    content: "hello@onetreeseo.com",
-    subtext: "We respond within 24 hours",
-    gradient: "from-purple-400 to-pink-500",
-    bgGradient: "from-purple-50 to-pink-50",
-  },
-  {
-    icon: <MapPin className="h-6 w-6" />,
-    title: "Headquarters",
-    content: "123 Broadway, Suite 500",
-    subtext: "New York, NY 10001",
-    gradient: "from-green-400 to-emerald-500",
-    bgGradient: "from-green-50 to-emerald-50",
-  },
-  {
-    icon: <MessageCircle className="h-6 w-6" />,
-    title: "Live Chat",
-    content: "Available on website",
-    subtext: "Mon-Fri, 9AM-6PM EST",
-    gradient: "from-orange-400 to-red-500",
-    bgGradient: "from-orange-50 to-red-50",
-  },
+  { title: "E-commerce Fashion Store", industry: "Retail", image: "https://images.unsplash.com/photo-1615454782617-e69bbd4f2969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3ZWIlMjBkZXZlbG9wbWVudCUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NTU1MTc5MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    results: { traffic: "+340%", ranking: "85% Top 3", revenue: "+280%" },
+    description: "Transformed an online fashion retailer's SEO strategy, resulting in massive organic growth and revenue increase.",
+    timeframe: "6 months" },
+  { title: "Local Service Business", industry: "Home Services", image: "https://images.unsplash.com/photo-1579389248774-07907f421a6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwxfHx8fDE3NTU0ODYxNDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    results: { traffic: "+450%", ranking: "Page 1", leads: "+320%" },
+    description: "Helped a local HVAC company dominate their geographic market through strategic local SEO optimization.",
+    timeframe: "4 months" },
+  { title: "SaaS Technology Platform", industry: "Technology", image: "https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxTRU8lMjBhbmFseXRpY3MlMjBkYXNoYm9hcmQlMjBjb21wdXRlcnxlbnwxfHx8fDE3NTU1MTc5MDF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    results: { traffic: "+290%", ranking: "92% Top 10", signups: "+180%" },
+    description: "Elevated a B2B SaaS platform's organic visibility and increased qualified demo requests significantly.",
+    timeframe: "8 months" },
 ];
 
+const testimonials = [
+  { quote: "OneTree SEO transformed our online presence. We went from page 3 to dominating page 1 for our main keywords.", author: "Sarah Johnson", company: "TechStart Solutions", role: "Marketing Director" },
+  { quote: "The results speak for themselves - 340% increase in organic traffic and our best year ever in terms of revenue.", author: "Michael Chen", company: "Urban Fashion Co.", role: "CEO" },
+  { quote: "Professional, knowledgeable, and results-driven. OneTree SEO exceeded all our expectations.", author: "David Rodriguez", company: "HomeComfort HVAC", role: "Owner" },
+];
+
+const serviceAreas = [
+  "New York Metro","Los Angeles County","Chicago Metro","San Francisco Bay Area","Boston","Philadelphia","Washington DC","Atlanta","Miami","Dallas","Houston","Phoenix","Seattle","Denver","Austin","San Diego",
+];
 
 export default function Hero() {
   return (
