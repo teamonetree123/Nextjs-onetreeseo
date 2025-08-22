@@ -1148,7 +1148,7 @@ export default function Hero() {
               className="w-full h-full object-cover"
             />
             <div className="absolute top-4 left-4">
-              <Badge variant="secondary">{project.industry}</Badge>
+              
             </div>
           </div>
           
