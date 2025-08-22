@@ -219,14 +219,14 @@ const benefits: Benefit[] = [
   { icon: <DollarSign className="h-8 w-8 text-blue-500" />,   title: "Higher ROI",               percentage: "685%",  description: "Average return on investment compared to traditional advertising", gradient: "from-blue-400 to-cyan-500",  bgGradient: "from-blue-50 to-cyan-50" },
   { icon: <Users className="h-8 w-8 text-purple-500" />,      title: "Better Lead Quality",      percentage: "+156%", description: "Improvement in lead quality from organic search traffic", gradient: "from-purple-400 to-pink-500", bgGradient: "from-purple-50 to-pink-50" },
   { icon: <Globe className="h-8 w-8 text-orange-500" />,      title: "Brand Visibility",         percentage: "+89%",  description: "Increase in brand awareness and online presence",        gradient: "from-orange-400 to-red-500",  bgGradient: "from-orange-50 to-red-50" },
-  { icon: <Eye className="h-8 w-8 text-red-500" />,           title: "Page 1 Rankings",          percentage: "76%",   description: "Of our clients' target keywords rank on Google's first page", gradient: "from-red-400 to-pink-500", bgGradient: "from-red-50 to-pink-50" },
+  { icon: <Eye className="h-8 w-8 text-red-500" />,           title: "Page 1 Rankings",          percentage: "76%",   description: "Of our clients&rsquo; target keywords rank on Google&rsquo;s first page", gradient: "from-red-400 to-pink-500", bgGradient: "from-red-50 to-pink-50" },
   { icon: <MousePointer className="h-8 w-8 text-teal-500" />, title: "Conversion Rate",          percentage: "+92%",  description: "Improvement in website conversion rates through optimization", gradient: "from-teal-400 to-cyan-500", bgGradient: "from-teal-50 to-cyan-50" },
 ];
 
 const reasons = [
   { icon: <CheckCircle className="h-6 w-6 text-green-500" />, title: "Proven Results",        description: "Our strategies have helped clients achieve average traffic increases of 300% within 6 months." },
   { icon: <Clock className="h-6 w-6 text-blue-500" />,        title: "Fast Implementation",   description: "We start delivering results within the first 30 days of engagement with quick wins and optimizations." },
-  { icon: <Shield className="h-6 w-6 text-purple-500" />,     title: "White-Hat Only",        description: "We follow Google's guidelines strictly, ensuring your website's long-term safety and sustainability." },
+  { icon: <Shield className="h-6 w-6 text-purple-500" />,     title: "White-Hat Only",        description: "We follow Google&rsquo;s guidelines strictly, ensuring your website&rsquo;s long-term safety and sustainability." },
   { icon: <Users className="h-6 w-6 text-orange-500" />,      title: "Dedicated Support",     description: "Your dedicated account manager provides regular updates and is always available for consultation." },
 ];
 
@@ -242,7 +242,7 @@ const industryStats = [
 const projects = [
   { title: "E-commerce Fashion Store", industry: "Retail", image: "https://images.unsplash.com/photo-1615454782617-e69bbd4f2969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3ZWIlMjBkZXZlbG9wbWVudCUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NTU1MTc5MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     results: { traffic: "+340%", ranking: "85% Top 3", revenue: "+280%" },
-    description: "Transformed an online fashion retailer's SEO strategy, resulting in massive organic growth and revenue increase.",
+    description: "Transformed an online fashion retailer&rsquo;s SEO strategy, resulting in massive organic growth and revenue increase.",
     timeframe: "6 months" },
   { title: "Local Service Business", industry: "Home Services", image: "https://images.unsplash.com/photo-1579389248774-07907f421a6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwxfHx8fDE3NTU0ODYxNDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     results: { traffic: "+450%", ranking: "Page 1", leads: "+320%" },
@@ -250,7 +250,7 @@ const projects = [
     timeframe: "4 months" },
   { title: "SaaS Technology Platform", industry: "Technology", image: "https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxTRU8lMjBhbmFseXRpY3MlMjBkYXNoYm9hcmQlMjBjb21wdXRlcnxlbnwxfHx8fDE3NTU1MTc5MDF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     results: { traffic: "+290%", ranking: "92% Top 10", signups: "+180%" },
-    description: "Elevated a B2B SaaS platform's organic visibility and increased qualified demo requests significantly.",
+    description: "Elevated a B2B SaaS platform&rsquo;s organic visibility and increased qualified demo requests significantly.",
     timeframe: "8 months" },
 ];
 
@@ -429,12 +429,12 @@ export default function Hero() {
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">About OneTree SEO</h2>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   Founded in 2016, OneTree SEO has been at the forefront of digital marketing innovation.
-                  We believe every business deserves to be found online—and we make that happen through
+                  We believe every business deserves to be found online&mdash;and we make that happen through
                   strategic SEO and digital marketing.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   Our data-driven approach combines technical expertise with creative thinking to deliver
-                  sustainable growth. We don’t just improve rankings—we transform businesses.
+                  sustainable growth. We don&rsquo;t just improve rankings&mdash;we transform businesses.
                 </p>
               </div>
 
@@ -562,506 +562,502 @@ export default function Hero() {
         </div>
       </section>
       <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Content */}
-          <div className="space-y-8">
-            <div className="space-y-6">
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
-                Why Choose OneTree SEO?
-              </h2>
-              <p className="text-lg text-gray-600">
-                We're not just another SEO agency. We're your strategic partner in digital growth, committed to delivering measurable results that matter to your business.
-              </p>
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left Content */}
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
+                  Why Choose OneTree SEO?
+                </h2>
+                <p className="text-lg text-gray-600">
+                  We&rsquo;re not just another SEO agency. We&rsquo;re your strategic partner in digital growth, committed to delivering measurable results that matter to your business.
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                {reasons.map((reason, index) => (
+                  <div key={index} className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center">
+                      {reason.icon}
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-900 mb-2">{reason.title}</h3>
+                      <p className="text-gray-600">{reason.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Stats */}
             </div>
 
-            <div className="space-y-6">
-              {reasons.map((reason, index) => (
-                <div key={index} className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center">
-                    {reason.icon}
+            {/* Right Image */}
+            <div className="relative">
+              <div className="rounded-2xl overflow-hidden shadow-xl">
+                <ImageWithFallback
+                  src="https://images.unsplash.com/photo-1579389248774-07907f421a6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwxfHx8fDE3NTU0ODYxNDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  alt="Team Collaboration"
+                  className="w-full h-auto"
+                />
+              </div>
+
+              {/* Floating Achievement Badge */}
+              <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl border border-gray-100">
+                <div className="text-center">
+                  <div className="text-sm text-gray-600 mb-1">Google Partner</div>
+                  <div className="text-lg font-bold text-primary">Certified</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-20 bg-gradient-to-br from-gray-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
+        {/* Creative background elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 right-20 w-64 h-64 bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full blur-3xl float-animation"></div>
+          <div className="absolute bottom-20 left-20 w-48 h-48 bg-gradient-to-br from-green-200/20 to-blue-200/20 rounded-full blur-2xl bounce-subtle"></div>
+          
+          {/* Animated geometric shapes */}
+          <div className="absolute top-1/4 left-10 w-8 h-8 border-2 border-blue-300/30 rounded-lg rotate-45 rotate-slow"></div>
+          <div className="absolute top-3/4 right-1/4 w-6 h-6 border-2 border-purple-300/30 rounded-full pulse-grow"></div>
+          <div className="absolute top-1/2 right-10 w-10 h-10 bg-gradient-to-br from-pink-200/30 to-orange-200/30 rounded-lg transform rotate-12 bounce-subtle" style={{ animationDelay: '1s' }}></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-6 relative">
+          {/* Header with creative elements */}
+          <div className="text-center space-y-6 mb-16">
+            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-green-100 to-blue-100 rounded-full text-sm font-medium text-gray-700 border border-green-200/50 slide-in-up">
+              <Zap className="mr-2 h-4 w-4 text-yellow-500 animate-pulse" />
+              Proven Results &amp; Impact
+              <TrendingUp className="ml-2 h-4 w-4 text-green-500" />
+            </div>
+            
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 slide-in-up" style={{ animationDelay: '0.2s' }}>
+              The <span className="gradient-text">Power of SEO</span> for Your Business
+            </h2>
+            
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto slide-in-up" style={{ animationDelay: '0.4s' }}>
+              Search engine optimization isn&rsquo;t just about rankings &ndash; it&rsquo;s about driving real business results and sustainable growth.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
+            {/* Left - Enhanced Benefits Grid */}
+            <div className="grid sm:grid-cols-2 gap-6">
+              {benefits.map((benefit, index) => (
+                <Card 
+                  key={index} 
+                  className="border-0 shadow-lg bg-white hover:shadow-2xl transition-all duration-500 group cursor-pointer tilt-hover slide-in-up overflow-hidden relative"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  {/* Animated background */}
+                  <div className={`absolute inset-0 bg-gradient-to-br ${benefit.bgGradient} opacity-0 group-hover:opacity-100 transition-all duration-500`}></div>
+                  
+                  {/* Glowing effect */}
+                  <div className={`absolute -inset-0.5 bg-gradient-to-r ${benefit.gradient} rounded-lg blur opacity-0 group-hover:opacity-20 transition-all duration-500`}></div>
+                  
+                  <CardHeader className="pb-4 relative z-10">
+                    <div className="flex items-center justify-between">
+                      <div className="p-3 rounded-lg bg-gray-50 group-hover:scale-110 transition-all duration-300">
+                        {benefit.icon}
+                      </div>
+                      <div className="relative">
+                        <span className="text-2xl font-bold gradient-text group-hover:scale-110 transition-transform inline-block">
+                          {benefit.percentage}
+                        </span>
+                        <Sparkles className="absolute -top-2 -right-2 h-4 w-4 text-yellow-400 opacity-0 group-hover:opacity-100 transition-all animate-pulse" />
+                      </div>
+                    </div>
+                  </CardHeader>
+                  
+                  <CardContent className="pt-0 relative z-10">
+                    <CardTitle className="text-lg mb-2 group-hover:text-gray-900 transition-colors">{benefit.title}</CardTitle>
+                    <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors">{benefit.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            {/* Right - Enhanced Image */}
+            <div className="space-y-8 slide-in-up" style={{ animationDelay: '0.6s' }}>
+              <div className="relative rounded-2xl overflow-hidden shadow-xl tilt-hover">
+                {/* Glowing border */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl blur opacity-20"></div>
+                
+                <div className="relative bg-white rounded-2xl overflow-hidden">
+                  <ImageWithFallback
+                    src="https://images.unsplash.com/photo-1723987251277-18fc0a1effd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHx8fDE3NTU1MTc5MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                    alt="Business Growth Statistics"
+                    className="w-full h-auto"
+                  />
+                  
+                  {/* Shimmer overlay */}
+                  <div className="absolute inset-0 shimmer opacity-0 hover:opacity-100 transition-opacity"></div>
+                </div>
+              </div>
+
+              {/* Enhanced Results Summary */}
+              <div className="bg-gradient-to-br from-white to-gray-50/50 p-8 rounded-2xl border border-gray-100 relative overflow-hidden shadow-lg">
+                {/* Background decoration */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100/30 to-purple-100/20 rounded-full blur-2xl"></div>
+                
+                <div className="relative z-10">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-6 flex items-center">
+                    <Target className="mr-2 h-6 w-6 text-blue-500" />
+                    What This Means for Your Business
+                  </h3>
+                  
+                  <ul className="space-y-4">
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-gray-600 leading-relaxed">
+                        <strong className="text-gray-900">More Qualified Traffic:</strong> Attract visitors who are actively searching for your products or services
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-gray-600 leading-relaxed">
+                        <strong className="text-gray-900">Better ROI:</strong> SEO provides long-term value with compounding returns on your investment
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-gray-600 leading-relaxed">
+                        <strong className="text-gray-900">Increased Authority:</strong> Higher search rankings establish credibility and trust with your audience
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-2 h-2 bg-gradient-to-r from-orange-400 to-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-gray-600 leading-relaxed">
+                        <strong className="text-gray-900">Competitive Advantage:</strong> Outrank competitors and capture market share in your industry
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Enhanced Bottom CTA */}
+          <div className="text-center bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white p-12 rounded-2xl relative overflow-hidden slide-in-up" style={{ animationDelay: '0.8s' }}>
+            {/* Background animation */}
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-size-200 animate-gradient-x"></div>
+            
+            {/* Floating elements */}
+            <div className="absolute top-4 left-4 w-12 h-12 bg-white/10 rounded-full blur-xl float-animation"></div>
+            <div className="absolute bottom-4 right-4 w-8 h-8 bg-white/20 rounded-full blur-lg bounce-subtle"></div>
+            <div className="absolute top-1/2 left-8 w-6 h-6 bg-white/15 rounded-full blur-md pulse-grow"></div>
+            
+            <div className="relative z-10">
+              <div className="flex items-center justify-center mb-4">
+                <Zap className="mr-2 h-8 w-8 animate-pulse" />
+                <h3 className="text-2xl font-bold">Ready to Transform Your Business?</h3>
+                <Sparkles className="ml-2 h-6 w-6 animate-pulse" />
+              </div>
+              
+              <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                Join hundreds of successful businesses that have grown with our SEO expertise.
+              </p>
+              
+              <button className="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 group">
+                <span className="flex items-center">
+                  Start Your SEO Journey Today
+                  <TrendingUp className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="industry-stats" className="py-20 bg-white relative overflow-hidden">
+        {/* Creative background elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-20 w-64 h-64 bg-gradient-to-br from-blue-200/15 to-purple-200/15 rounded-full blur-3xl float-animation"></div>
+          <div className="absolute bottom-20 right-20 w-48 h-48 bg-gradient-to-br from-green-200/15 to-blue-200/15 rounded-full blur-2xl bounce-subtle"></div>
+          <div className="absolute top-1/2 left-1/2 w-32 h-32 bg-gradient-to-br from-pink-200/10 to-orange-200/10 rounded-full blur-xl pulse-grow"></div>
+          
+          {/* Animated geometric shapes */}
+          <div className="absolute top-1/4 right-10 w-8 h-8 border-2 border-blue-300/20 rounded-lg rotate-45 rotate-slow"></div>
+          <div className="absolute bottom-1/4 left-10 w-6 h-6 border-2 border-purple-300/20 rounded-full pulse-grow"></div>
+          <div className="absolute top-3/4 right-1/3 w-10 h-10 bg-gradient-to-br from-pink-200/20 to-orange-200/20 rounded-lg transform rotate-12 bounce-subtle" style={{ animationDelay: '2s' }}></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-6 relative">
+          {/* Enhanced Header */}
+          <div className="text-center space-y-6 mb-16">
+            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full text-sm font-medium text-gray-700 border border-blue-200/50 slide-in-up">
+              <BarChart3 className="mr-2 h-4 w-4 text-blue-500" />
+              Industry Insights &amp; Data
+              <Sparkles className="ml-2 h-4 w-4 text-yellow-500 animate-pulse" />
+            </div>
+            
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 slide-in-up" style={{ animationDelay: '0.2s' }}>
+              The <span className="gradient-text">Numbers Behind</span> SEO Success
+            </h2>
+            
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto slide-in-up" style={{ animationDelay: '0.4s' }}>
+              Understanding industry statistics helps businesses make informed decisions about their digital marketing investments and SEO strategies.
+            </p>
+          </div>
+
+          <div className="mb-16">
+            {/* Full Width Enhanced Stats Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {industryStats.map((item, index) => (
+                <Card 
+                  key={index} 
+                  className="border-0 shadow-lg bg-white hover:shadow-2xl transition-all duration-500 group cursor-pointer overflow-hidden relative slide-in-up aspect-square"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  {/* Animated background */}
+                  <div className={`absolute inset-0 bg-gradient-to-br ${item.bgGradient} opacity-0 group-hover:opacity-100 transition-all duration-500`}></div>
+                  
+                  {/* Glowing effect */}
+                  <div className={`absolute -inset-0.5 bg-gradient-to-r ${item.gradient} rounded-lg blur opacity-0 group-hover:opacity-20 transition-all duration-500`}></div>
+                  
+                  <CardContent className="p-6 relative z-10 h-full flex flex-col items-center justify-center text-center">
+                    <div className={`w-16 h-16 bg-gradient-to-br ${item.bgGradient} rounded-xl flex items-center justify-center text-gray-700 group-hover:scale-110 transition-all duration-300 mb-1`}>
+                      {item.icon}
+                    </div>
+                    
+                    <div className="flex-1 flex flex-col justify-center">
+                      <p className="text-lg font-semibold text-gray-900 group-hover:text-gray-900 transition-colors leading-tight">
+                        {item.stat}
+                      </p>
+                      <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors line-clamp-3 leading-snug">
+                        {item.insight}
+                      </p>
+                    </div>
+                    
+                    {/* Hover sparkles */}
+                    <Sparkles className="absolute top-4 right-4 h-4 w-4 text-yellow-400 opacity-0 group-hover:opacity-100 transition-all animate-pulse" />
+                    
+                    {/* Hover arrow */}
+                    <ArrowRight className="h-5 w-5 text-gray-400 group-hover:text-gray-600 group-hover:translate-y-1 transition-all opacity-0 group-hover:opacity-100" />
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Enhanced Bottom CTA */}
+          <div className="text-center bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-gray-100 relative overflow-hidden slide-in-up" style={{ animationDelay: '0.8s' }}>
+            {/* Background animation */}
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-50/50 via-purple-50/30 to-pink-50/50"></div>
+            
+            {/* Floating elements */}
+            <div className="absolute top-4 left-4 w-8 h-8 bg-blue-200/20 rounded-full blur-lg float-animation"></div>
+            <div className="absolute bottom-4 right-4 w-6 h-6 bg-purple-200/30 rounded-full blur-md bounce-subtle"></div>
+            <div className="absolute top-1/2 right-8 w-4 h-4 bg-pink-200/25 rounded-full blur-sm pulse-grow"></div>
+            
+            <div className="relative z-10">
+              <div className="flex items-center justify-center mb-4">
+                <Target className="mr-2 h-6 w-6 text-blue-500" />
+                <h3 className="text-2xl font-bold text-gray-900">Ready to Join the Success Stories?</h3>
+                <Sparkles className="ml-2 h-6 w-6 text-yellow-500 animate-pulse" />
+              </div>
+              
+              <p className="text-gray-600 mb-6 max-w-2xl mx-auto text-lg">
+                Don&rsquo;t let your competitors dominate the search results. Start your SEO journey today and become part of these winning statistics.
+              </p>
+              
+              <button className="glow-button border-0 text-white px-8 py-4 rounded-lg font-semibold group">
+                <span className="flex items-center relative z-10">
+                  Get Your Free SEO Analysis
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Header */}
+          <div className="text-center space-y-6 mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
+              Success Stories
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              See how we&rsquo;ve helped businesses across different industries achieve remarkable SEO results and sustainable growth.
+            </p>
+          </div>
+
+          {/* Case Studies */}
+          <div className="grid lg:grid-cols-3 gap-8 mb-20">
+            {projects.map((project, index) => (
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
+                  <ImageWithFallback
+                    src={
+                      project.image.includes("images.unsplash.com")
+                        ? project.image.split("?")[0]
+                        : project.image
+                    }
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-4 left-4"></div>
+                </div>
+                
+                <CardHeader>
+                  <CardTitle className="flex items-center justify-between">
+                    {project.title}
+                  </CardTitle>
+                  <p className="text-gray-600 text-sm">{project.description}</p>
+                </CardHeader>
+                
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="grid grid-cols-3 gap-4 text-center">
+                      <div>
+                        <div className="text-lg font-bold text-green-600">{project.results.traffic}</div>
+                        <div className="text-xs text-gray-600">Traffic</div>
+                      </div>
+                      <div>
+                        <div className="text-lg font-bold text-blue-600">{project.results.ranking}</div>
+                        <div className="text-xs text-gray-600">Rankings</div>
+                      </div>
+                      <div>
+                        <div className="text-lg font-bold text-purple-600">
+                          {project.results.revenue || project.results.leads || project.results.signups}
+                        </div>
+                        <div className="text-xs text-gray-600">
+                          {project.results.revenue ? "Revenue" : project.results.leads ? "Leads" : "Signups"}
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+                      <span className="text-sm text-gray-600">Timeframe: {project.timeframe}</span>
+                      {/* Inline TrendingUp icon */}
+                      <svg
+                        className="h-4 w-4 text-green-500"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M22 7l-7.5 7.5-5-5L2 17" />
+                        <path d="M16 7h6v6" />
+                      </svg>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-2">{reason.title}</h3>
-                    <p className="text-gray-600">{reason.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Testimonials */}
+          <div className="bg-gray-50 p-12 rounded-2xl">
+            <h3 className="text-2xl font-bold text-center mb-12 text-gray-900">What Our Clients Say</h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              {testimonials.map((testimonial, index) => (
+                <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
+                  {/* Quote icon badge */}
+                  <div className="mb-3">
+                    <svg
+                      className="h-6 w-6 text-gray-300"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M7.17 6A5.17 5.17 0 0 0 2 11.17V18a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-6a6 6 0 0 0-6-6zm10 0A5.17 5.17 0 0 0 12 11.17V18a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-6a6 6 0 0 0-6-6z"/>
+                    </svg>
+                  </div>
+                  <p className="text-gray-600 mb-4 italic">&quot;{testimonial.quote}&quot;</p>
+                  <div className="border-t border-gray-100 pt-4">
+                    <div className="font-semibold text-gray-900">{testimonial.author}</div>
+                    <div className="text-sm text-gray-600">{testimonial.role}</div>
+                    <div className="text-sm text-primary">{testimonial.company}</div>
                   </div>
                 </div>
               ))}
             </div>
-
-            {/* Stats */}
-
-          </div>
-
-          {/* Right Image */}
-          <div className="relative">
-            <div className="rounded-2xl overflow-hidden shadow-xl">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1579389248774-07907f421a6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwxfHx8fDE3NTU0ODYxNDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Team Collaboration"
-                className="w-full h-auto"
-              />
-            </div>
-
-            {/* Floating Achievement Badge */}
-            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl border border-gray-100">
-              <div className="text-center">
-                <div className="text-sm text-gray-600 mb-1">Google Partner</div>
-                <div className="text-lg font-bold text-primary">Certified</div>
-              </div>
-            </div>
           </div>
         </div>
-      </div>
-    </section>
-       <section className="py-20 bg-gradient-to-br from-gray-50 via-blue-50/30 to-purple-50/20 relative overflow-hidden">
-      {/* Creative background elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 right-20 w-64 h-64 bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full blur-3xl float-animation"></div>
-        <div className="absolute bottom-20 left-20 w-48 h-48 bg-gradient-to-br from-green-200/20 to-blue-200/20 rounded-full blur-2xl bounce-subtle"></div>
-        
-        {/* Animated geometric shapes */}
-        <div className="absolute top-1/4 left-10 w-8 h-8 border-2 border-blue-300/30 rounded-lg rotate-45 rotate-slow"></div>
-        <div className="absolute top-3/4 right-1/4 w-6 h-6 border-2 border-purple-300/30 rounded-full pulse-grow"></div>
-        <div className="absolute top-1/2 right-10 w-10 h-10 bg-gradient-to-br from-pink-200/30 to-orange-200/30 rounded-lg transform rotate-12 bounce-subtle" style={{ animationDelay: '1s' }}></div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-6 relative">
-        {/* Header with creative elements */}
-        <div className="text-center space-y-6 mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-green-100 to-blue-100 rounded-full text-sm font-medium text-gray-700 border border-green-200/50 slide-in-up">
-            <Zap className="mr-2 h-4 w-4 text-yellow-500 animate-pulse" />
-            Proven Results & Impact
-            <TrendingUp className="ml-2 h-4 w-4 text-green-500" />
+      </section>
+      <section id="locations" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* Header */}
+          <div className="text-center space-y-6 mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
+              Our Locations
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We&rsquo;re strategically located to serve businesses across major metropolitan areas, with remote support available nationwide.
+            </p>
           </div>
-          
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 slide-in-up" style={{ animationDelay: '0.2s' }}>
-            The <span className="gradient-text">Power of SEO</span> for Your Business
-          </h2>
-          
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto slide-in-up" style={{ animationDelay: '0.4s' }}>
-            Search engine optimization isn't just about rankings – it's about driving real business results and sustainable growth.
-          </p>
-        </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
-          {/* Left - Enhanced Benefits Grid */}
-          <div className="grid sm:grid-cols-2 gap-6">
-            {benefits.map((benefit, index) => (
-              <Card 
-                key={index} 
-                className="border-0 shadow-lg bg-white hover:shadow-2xl transition-all duration-500 group cursor-pointer tilt-hover slide-in-up overflow-hidden relative"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                {/* Animated background */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${benefit.bgGradient} opacity-0 group-hover:opacity-100 transition-all duration-500`}></div>
-                
-                {/* Glowing effect */}
-                <div className={`absolute -inset-0.5 bg-gradient-to-r ${benefit.gradient} rounded-lg blur opacity-0 group-hover:opacity-20 transition-all duration-500`}></div>
-                
-                <CardHeader className="pb-4 relative z-10">
-                  <div className="flex items-center justify-between">
-                    <div className="p-3 rounded-lg bg-gray-50 group-hover:scale-110 transition-all duration-300">
-                      {benefit.icon}
-                    </div>
-                    <div className="relative">
-                      <span className="text-2xl font-bold gradient-text group-hover:scale-110 transition-transform inline-block">
-                        {benefit.percentage}
-                      </span>
-                      <Sparkles className="absolute -top-2 -right-2 h-4 w-4 text-yellow-400 opacity-0 group-hover:opacity-100 transition-all animate-pulse" />
-                    </div>
-                  </div>
+          {/* Office Locations */}
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            {locations.map((location, index) => (
+              <Card key={index} className="border-0 shadow-lg bg-white hover:shadow-xl transition-shadow duration-300">
+                <CardHeader>
+                  <CardTitle className="flex items-center space-x-2">
+                    <MapPin className="h-5 w-5 text-primary" />
+                    <span>{location.city}</span>
+                  </CardTitle>
                 </CardHeader>
-                
-                <CardContent className="pt-0 relative z-10">
-                  <CardTitle className="text-lg mb-2 group-hover:text-gray-900 transition-colors">{benefit.title}</CardTitle>
-                  <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors">{benefit.description}</p>
+                <CardContent className="space-y-4">
+                  <div className="space-y-2">
+                    <p className="text-gray-600">{location.address}</p>
+                    <p className="text-gray-600">{location.zipcode}</p>
+                  </div>
+                  
+                  <div className="space-y-3 pt-4 border-t border-gray-100">
+                    <div className="flex items-center space-x-3">
+                      <Phone className="h-4 w-4 text-gray-400" />
+                      <span className="text-sm text-gray-600">{location.phone}</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Mail className="h-4 w-4 text-gray-400" />
+                      <span className="text-sm text-gray-600">{location.email}</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <Clock className="h-4 w-4 text-gray-400" />
+                      <span className="text-sm text-gray-600">{location.hours}</span>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             ))}
           </div>
 
-          {/* Right - Enhanced Image */}
-          <div className="space-y-8 slide-in-up" style={{ animationDelay: '0.6s' }}>
-            <div className="relative rounded-2xl overflow-hidden shadow-xl tilt-hover">
-              {/* Glowing border */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl blur opacity-20"></div>
-              
-              <div className="relative bg-white rounded-2xl overflow-hidden">
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1723987251277-18fc0a1effd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHx8fDE3NTU1MTc5MDJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Business Growth Statistics"
-                  className="w-full h-auto"
-                />
-                
-                {/* Shimmer overlay */}
-                <div className="absolute inset-0 shimmer opacity-0 hover:opacity-100 transition-opacity"></div>
-              </div>
-            </div>
-
-            {/* Enhanced Results Summary */}
-            <div className="bg-gradient-to-br from-white to-gray-50/50 p-8 rounded-2xl border border-gray-100 relative overflow-hidden shadow-lg">
-              {/* Background decoration */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100/30 to-purple-100/20 rounded-full blur-2xl"></div>
-              
-              <div className="relative z-10">
-                <h3 className="text-xl font-semibold text-gray-900 mb-6 flex items-center">
-                  <Target className="mr-2 h-6 w-6 text-blue-500" />
-                  What This Means for Your Business
-                </h3>
-                
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-600 leading-relaxed">
-                      <strong className="text-gray-900">More Qualified Traffic:</strong> Attract visitors who are actively searching for your products or services
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-600 leading-relaxed">
-                      <strong className="text-gray-900">Better ROI:</strong> SEO provides long-term value with compounding returns on your investment
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-600 leading-relaxed">
-                      <strong className="text-gray-900">Increased Authority:</strong> Higher search rankings establish credibility and trust with your audience
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-gradient-to-r from-orange-400 to-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-600 leading-relaxed">
-                      <strong className="text-gray-900">Competitive Advantage:</strong> Outrank competitors and capture market share in your industry
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Enhanced Bottom CTA */}
-        <div className="text-center bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white p-12 rounded-2xl relative overflow-hidden slide-in-up" style={{ animationDelay: '0.8s' }}>
-          {/* Background animation */}
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-size-200 animate-gradient-x"></div>
-          
-          {/* Floating elements */}
-          <div className="absolute top-4 left-4 w-12 h-12 bg-white/10 rounded-full blur-xl float-animation"></div>
-          <div className="absolute bottom-4 right-4 w-8 h-8 bg-white/20 rounded-full blur-lg bounce-subtle"></div>
-          <div className="absolute top-1/2 left-8 w-6 h-6 bg-white/15 rounded-full blur-md pulse-grow"></div>
-          
-          <div className="relative z-10">
-            <div className="flex items-center justify-center mb-4">
-              <Zap className="mr-2 h-8 w-8 animate-pulse" />
-              <h3 className="text-2xl font-bold">Ready to Transform Your Business?</h3>
-              <Sparkles className="ml-2 h-6 w-6 animate-pulse" />
+          {/* Service Areas */}
+          <div className="bg-white p-12 rounded-2xl shadow-lg">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Service Areas</h3>
+              <p className="text-gray-600">
+                We provide SEO and digital marketing services to businesses in these metropolitan areas and beyond.
+              </p>
             </div>
             
-            <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Join hundreds of successful businesses that have grown with our SEO expertise.
-            </p>
-            
-            <button className="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 group">
-              <span className="flex items-center">
-                Start Your SEO Journey Today
-                <TrendingUp className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="industry-stats" className="py-20 bg-white relative overflow-hidden">
-      {/* Creative background elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-64 h-64 bg-gradient-to-br from-blue-200/15 to-purple-200/15 rounded-full blur-3xl float-animation"></div>
-        <div className="absolute bottom-20 right-20 w-48 h-48 bg-gradient-to-br from-green-200/15 to-blue-200/15 rounded-full blur-2xl bounce-subtle"></div>
-        <div className="absolute top-1/2 left-1/2 w-32 h-32 bg-gradient-to-br from-pink-200/10 to-orange-200/10 rounded-full blur-xl pulse-grow"></div>
-        
-        {/* Animated geometric shapes */}
-        <div className="absolute top-1/4 right-10 w-8 h-8 border-2 border-blue-300/20 rounded-lg rotate-45 rotate-slow"></div>
-        <div className="absolute bottom-1/4 left-10 w-6 h-6 border-2 border-purple-300/20 rounded-full pulse-grow"></div>
-        <div className="absolute top-3/4 right-1/3 w-10 h-10 bg-gradient-to-br from-pink-200/20 to-orange-200/20 rounded-lg transform rotate-12 bounce-subtle" style={{ animationDelay: '2s' }}></div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-6 relative">
-        {/* Enhanced Header */}
-        <div className="text-center space-y-6 mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full text-sm font-medium text-gray-700 border border-blue-200/50 slide-in-up">
-            <BarChart3 className="mr-2 h-4 w-4 text-blue-500" />
-            Industry Insights & Data
-            <Sparkles className="ml-2 h-4 w-4 text-yellow-500 animate-pulse" />
-          </div>
-          
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 slide-in-up" style={{ animationDelay: '0.2s' }}>
-            The <span className="gradient-text">Numbers Behind</span> SEO Success
-          </h2>
-          
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto slide-in-up" style={{ animationDelay: '0.4s' }}>
-            Understanding industry statistics helps businesses make informed decisions about their digital marketing investments and SEO strategies.
-          </p>
-        </div>
-
-        <div className="mb-16">
-          {/* Full Width Enhanced Stats Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {industryStats.map((item, index) => (
-              <Card 
-                key={index} 
-                className="border-0 shadow-lg bg-white hover:shadow-2xl transition-all duration-500 group cursor-pointer overflow-hidden relative slide-in-up aspect-square"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                {/* Animated background */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${item.bgGradient} opacity-0 group-hover:opacity-100 transition-all duration-500`}></div>
-                
-                {/* Glowing effect */}
-                <div className={`absolute -inset-0.5 bg-gradient-to-r ${item.gradient} rounded-lg blur opacity-0 group-hover:opacity-20 transition-all duration-500`}></div>
-                
-                <CardContent className="p-6 relative z-10 h-full flex flex-col items-center justify-center text-center">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${item.bgGradient} rounded-xl flex items-center justify-center text-gray-700 group-hover:scale-110 transition-all duration-300 mb-1`}>
-                    {item.icon}
-                  </div>
-                  
-                  <div className="flex-1 flex flex-col justify-center">
-                    <p className="text-lg font-semibold text-gray-900 group-hover:text-gray-900 transition-colors leading-tight">
-                      {item.stat}
-                    </p>
-                    <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors line-clamp-3 leading-snug">
-                      {item.insight}
-                    </p>
-                  </div>
-                  
-                  {/* Hover sparkles */}
-                  <Sparkles className="absolute top-4 right-4 h-4 w-4 text-yellow-400 opacity-0 group-hover:opacity-100 transition-all animate-pulse" />
-                  
-                  {/* Hover arrow */}
-                  <ArrowRight className="h-5 w-5 text-gray-400 group-hover:text-gray-600 group-hover:translate-y-1 transition-all opacity-0 group-hover:opacity-100" />
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* Enhanced Bottom CTA */}
-        <div className="text-center bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-gray-100 relative overflow-hidden slide-in-up" style={{ animationDelay: '0.8s' }}>
-          {/* Background animation */}
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-50/50 via-purple-50/30 to-pink-50/50"></div>
-          
-          {/* Floating elements */}
-          <div className="absolute top-4 left-4 w-8 h-8 bg-blue-200/20 rounded-full blur-lg float-animation"></div>
-          <div className="absolute bottom-4 right-4 w-6 h-6 bg-purple-200/30 rounded-full blur-md bounce-subtle"></div>
-          <div className="absolute top-1/2 right-8 w-4 h-4 bg-pink-200/25 rounded-full blur-sm pulse-grow"></div>
-          
-          <div className="relative z-10">
-            <div className="flex items-center justify-center mb-4">
-              <Target className="mr-2 h-6 w-6 text-blue-500" />
-              <h3 className="text-2xl font-bold text-gray-900">Ready to Join the Success Stories?</h3>
-              <Sparkles className="ml-2 h-6 w-6 text-yellow-500 animate-pulse" />
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {serviceAreas.map((area, index) => (
+                <div key={index} className="flex items-center space-x-2 p-3 bg-gray-50 rounded-lg">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span className="text-sm text-gray-700">{area}</span>
+                </div>
+              ))}
             </div>
             
-            <p className="text-gray-600 mb-6 max-w-2xl mx-auto text-lg">
-              Don't let your competitors dominate the search results. Start your SEO journey today and become part of these winning statistics.
-            </p>
-            
-            <button className="glow-button border-0 text-white px-8 py-4 rounded-lg font-semibold group">
-              <span className="flex items-center relative z-10">
-                Get Your Free SEO Analysis
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="portfolio" className="py-20 bg-white">
-  <div className="max-w-7xl mx-auto px-6">
-    {/* Header */}
-    <div className="text-center space-y-6 mb-16">
-      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
-        Success Stories
-      </h2>
-      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-        See how we've helped businesses across different industries achieve remarkable SEO results and sustainable growth.
-      </p>
-    </div>
-
-    {/* Case Studies */}
-    <div className="grid lg:grid-cols-3 gap-8 mb-20">
-      {projects.map((project, index) => (
-        <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-          <div className="relative h-48 overflow-hidden">
-            <ImageWithFallback
-              src={
-                project.image.includes("images.unsplash.com")
-                  ? project.image.split("?")[0] // strip tracking/query gunk
-                  : project.image
-              }
-              alt={project.title}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute top-4 left-4">
-              
+            <div className="text-center mt-8">
+              <p className="text-gray-600 mb-4">
+                Don&rsquo;t see your area listed? We work with businesses nationwide through our remote services.
+              </p>
+              <button className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors">
+                Contact Us for Your Area
+              </button>
             </div>
           </div>
-          
-          <CardHeader>
-            <CardTitle className="flex items-center justify-between">
-              {project.title}
-              {/* Removed ExternalLink icon */}
-            </CardTitle>
-            <p className="text-gray-600 text-sm">{project.description}</p>
-          </CardHeader>
-          
-          <CardContent>
-            <div className="space-y-4">
-              <div className="grid grid-cols-3 gap-4 text-center">
-                <div>
-                  <div className="text-lg font-bold text-green-600">{project.results.traffic}</div>
-                  <div className="text-xs text-gray-600">Traffic</div>
-                </div>
-                <div>
-                  <div className="text-lg font-bold text-blue-600">{project.results.ranking}</div>
-                  <div className="text-xs text-gray-600">Rankings</div>
-                </div>
-                <div>
-                  <div className="text-lg font-bold text-purple-600">
-                    {project.results.revenue || project.results.leads || project.results.signups}
-                  </div>
-                  <div className="text-xs text-gray-600">
-                    {project.results.revenue ? "Revenue" : project.results.leads ? "Leads" : "Signups"}
-                  </div>
-                </div>
-              </div>
-              
-              <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                <span className="text-sm text-gray-600">Timeframe: {project.timeframe}</span>
-                {/* Inline TrendingUp icon (replaces lucide-react) */}
-                <svg
-                  className="h-4 w-4 text-green-500"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M22 7l-7.5 7.5-5-5L2 17" />
-                  <path d="M16 7h6v6" />
-                </svg>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      ))}
-    </div>
-
-    {/* Testimonials */}
-    <div className="bg-gray-50 p-12 rounded-2xl">
-      <h3 className="text-2xl font-bold text-center mb-12 text-gray-900">What Our Clients Say</h3>
-      <div className="grid md:grid-cols-3 gap-8">
-        {testimonials.map((testimonial, index) => (
-          <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
-            {/* Quote icon badge */}
-            <div className="mb-3">
-              <svg
-                className="h-6 w-6 text-gray-300"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path d="M7.17 6A5.17 5.17 0 0 0 2 11.17V18a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-6a6 6 0 0 0-6-6zm10 0A5.17 5.17 0 0 0 12 11.17V18a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-6a6 6 0 0 0-6-6z"/>
-              </svg>
-            </div>
-            <p className="text-gray-600 mb-4 italic">"{testimonial.quote}"</p>
-            <div className="border-t border-gray-100 pt-4">
-              <div className="font-semibold text-gray-900">{testimonial.author}</div>
-              <div className="text-sm text-gray-600">{testimonial.role}</div>
-              <div className="text-sm text-primary">{testimonial.company}</div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-</section>
-<section id="locations" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Header */}
-        <div className="text-center space-y-6 mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
-            Our Locations
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're strategically located to serve businesses across major metropolitan areas, with remote support available nationwide.
-          </p>
         </div>
-
-        {/* Office Locations */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {locations.map((location, index) => (
-            <Card key={index} className="border-0 shadow-lg bg-white hover:shadow-xl transition-shadow duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-2">
-                  <MapPin className="h-5 w-5 text-primary" />
-                  <span>{location.city}</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="space-y-2">
-                  <p className="text-gray-600">{location.address}</p>
-                  <p className="text-gray-600">{location.zipcode}</p>
-                </div>
-                
-                <div className="space-y-3 pt-4 border-t border-gray-100">
-                  <div className="flex items-center space-x-3">
-                    <Phone className="h-4 w-4 text-gray-400" />
-                    <span className="text-sm text-gray-600">{location.phone}</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Mail className="h-4 w-4 text-gray-400" />
-                    <span className="text-sm text-gray-600">{location.email}</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Clock className="h-4 w-4 text-gray-400" />
-                    <span className="text-sm text-gray-600">{location.hours}</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        {/* Service Areas */}
-        <div className="bg-white p-12 rounded-2xl shadow-lg">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Service Areas</h3>
-            <p className="text-gray-600">
-              We provide SEO and digital marketing services to businesses in these metropolitan areas and beyond.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {serviceAreas.map((area, index) => (
-              <div key={index} className="flex items-center space-x-2 p-3 bg-gray-50 rounded-lg">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span className="text-sm text-gray-700">{area}</span>
-              </div>
-            ))}
-          </div>
-          
-          <div className="text-center mt-8">
-            <p className="text-gray-600 mb-4">
-              Don't see your area listed? We work with businesses nationwide through our remote services.
-            </p>
-            <button className="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors">
-              Contact Us for Your Area
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 }
