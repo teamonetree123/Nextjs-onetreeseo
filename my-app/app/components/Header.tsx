@@ -80,7 +80,7 @@ export default function Header() {
 
           {/* Mobile toggle */}
           <button
-            onClick={() => setOpen((s) => !s)}
+            onClick={() => setOpen((s: boolean) => !s)}
             className="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-md border border-black/10 text-gray-700"
             aria-label="Toggle Menu"
           >
