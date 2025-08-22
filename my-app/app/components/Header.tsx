@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 
-
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -26,10 +25,10 @@ export default function Header() {
 
       <div className="max-w-7xl mx-auto px-6 py-4 relative">
         <div className="flex items-center justify-between">
-          {/* Logo with creative animation */}
+          {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
             <span className="relative inline-flex">
-              <span className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-12 morph-shape">
+              <span className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
                 <span className="text-white font-bold text-lg leading-none">O</span>
               </span>
               <span className="absolute inset-0 w-8 h-8 bg-gradient-to-br from-blue-400 to-purple-400 rounded-lg blur-md opacity-70 group-hover:opacity-100 transition-opacity" />
@@ -37,7 +36,6 @@ export default function Header() {
             <span className="text-xl font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               OneTree SEO
             </span>
-            <Sparkles className="h-5 w-5 text-yellow-500 animate-pulse opacity-0 group-hover:opacity-100 transition-all duration-300" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -56,28 +54,14 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Glowing CTA Button */}
-          <div className="hidden md:block">
-            <Button className="glow-button border-0 text-white relative overflow-hidden">
-              <span className="relative z-10 inline-flex items-center">
-                Get Free Audit
-                <Sparkles className="ml-2 h-4 w-4 animate-pulse" />
-              </span>
-            </Button>
-          </div>
-
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button (text fallback) */}
           <button
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
             className="md:hidden relative p-2 rounded-lg hover:bg-gray-50 transition-colors"
             onClick={() => setIsMenuOpen((v) => !v)}
           >
-            {isMenuOpen ? (
-              <X size={24} className="transition-transform duration-300 rotate-180" />
-            ) : (
-              <Menu size={24} className="transition-transform duration-300" />
-            )}
+            {isMenuOpen ? "Close" : "Menu"}
           </button>
         </div>
 
@@ -89,19 +73,13 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-primary transition-colors duration-200 py-2 px-4 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 slide-in-up"
+                  className="text-gray-700 hover:text-primary transition-colors duration-200 py-2 px-4 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50"
                   style={{ animationDelay: `${index * 0.05}s` }}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <Button className="glow-button mt-2 border-0 text-white">
-                <span className="inline-flex items-center">
-                  Get Free Audit
-                  <Sparkles className="ml-2 h-4 w-4" />
-                </span>
-              </Button>
             </div>
           </nav>
         )}
